@@ -1,0 +1,1343 @@
+/* App.css */
+
+/* Basic Reset */
+/* App.css */
+
+/* Basic Reset */
+/* Home.css */
+
+/* Basic Reset */
+/* ReservationList.css */
+
+/* Basic styling for the Reservation List page */
+/* CreateReservation.css */
+
+/* Basic Reset */
+/* General Reset */
+/* HotelDetails.css */
+/* styles.css */
+/* Button Styling */
+/* Container for the entire reservation list */
+/* Global Styles *//* Home.css */
+/* Login.css *//* Home2.css */
+/* ReservationConfirmed.css */
+
+.reservation-confirmed-container {
+  position: relative;
+  padding: 20px;
+  background-color: #f7f7f7;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #4CAF50; /* Green color for the header */
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* Button styling */
+.view-reservation-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  text-align: center;
+}
+
+.view-reservation-btn:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+/* Loading state */
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .reservation-confirmed-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .view-reservation-btn {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+
+.home2-container {
+  position: relative;
+  height: 100vh;
+  background-color: #f7f7f7;
+  background-image: url('file:///C:/Users/DEEPIKA/Downloads/hotel1.webp'); /* Path to your local image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+/* Navigation Container */
+nav {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for the nav */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Styling */
+button {
+  background-color: #333;
+  color: white;
+  font-size: 1.25rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+/* Subtitle Styling for Reservation & View Reservation */
+.reservation-subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #f0f0f0;
+  font-weight: 500;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Message when user is not logged in */
+.home2-container h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .home2-container h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+
+  .reservation-subtitle {
+    font-size: 1rem;
+  }
+}
+
+
+.login-register-container {
+  position: relative;
+  height: 100vh;
+  background-color: #f7f7f7;
+  background-image: url('file:///C:/Users/DEEPIKA/Downloads/hotel1.webp'); /* Path to your local image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Login Form Container */
+.login-form-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px; /* Max width for the form */
+  text-align: center;
+}
+
+/* Heading for Login Form */
+.login-form-container h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input Fields */
+.login-form-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Submit Button */
+.login-form-container button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.login-form-container button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+.login-form-container button:hover:not(:disabled) {
+  background-color: #555;
+}
+
+/* Error Message */
+.error {
+  color: #f44336;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Add some responsiveness */
+@media (max-width: 768px) {
+  .login-form-container h3 {
+    font-size: 1.5rem;
+  }
+
+  .login-form-container input {
+    font-size: 1rem;
+  }
+
+  .login-form-container button {
+    font-size: 1rem;
+  }
+}
+
+
+.home-container {
+  position: relative;
+  text-align: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  background-image: url('C:\Users\DEEPIKA\Downloads\hotel1.webp'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Welcome Text Section */
+.welcome-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.welcome-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.welcome-text p {
+  font-size: 1.25rem;
+}
+
+/* Auth Section (Updated) */
+.auth-section {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.auth-section p {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+/* Style for Login and Register Links */
+.auth-link {
+  color: #333; /* Dark text color for better contrast */
+  background-color: #fff; /* White background */
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+  padding: 8px 20px;
+  border: 2px solid #fff; /* White border */
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.auth-link:hover {
+  background-color: #333; /* Dark background on hover */
+  color: #fff; /* White text on hover */
+}
+
+/* Add some responsiveness */
+@media (max-width: 768px) {
+  .welcome-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .welcome-text p {
+    font-size: 1.1rem;
+  }
+
+  .auth-link {
+    font-size: 1rem;
+  }
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f5f5f5;
+}
+
+/* Home Page Container */
+.home-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Background Image */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('C:\Users\DEEPIKA\Downloads\hotel1.webp') no-repeat center center/cover;
+  filter: brightness(0.7);
+  z-index: -1;
+}
+
+/* Welcome Text Section */
+.welcome-text {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.welcome-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.welcome-text p {
+  font-size: 1.2rem;
+}
+
+/* Auth Section */
+.auth-section {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+/* Login & Register Buttons */
+.auth-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.auth-button {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 20px;
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.auth-button:hover {
+  background: linear-gradient(45deg, #0056b3, #003580);
+  transform: scale(1.05);
+}
+
+.home-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.welcome-text {
+  margin-bottom: 30px;
+}
+
+.auth-buttons {
+  margin: 20px 0;
+}
+
+.auth-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-button:hover {
+  background-color: #0056b3;
+}
+
+.photos-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.hotel-photo {
+  width: 200px;
+  height: 150px;
+  margin: 0 10px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.options-section {
+  margin-top: 30px;
+}
+
+.reservation-list-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reserve-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.reserve-btn:hover {
+  background-color: #45a049;
+}
+
+/* Styling for reservation boxes */
+.reservation-boxes-container {
+  display: flex;
+  flex-wrap: wrap;  /* Allow wrapping for smaller screens */
+  gap: 20px;
+  justify-content: center; /* Center the reservation boxes */
+  padding-top: 20px;
+}
+
+/* Individual reservation box */
+.reservation-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px 25px; /* Increase padding horizontally to make the box wider */
+  width: 380px; /* Increase width for larger boxes */
+  min-height: 180px; /* Set a minimum height to keep it compact */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically inside the box */
+  justify-content: space-between; /* Distribute content evenly in the box */
+}
+
+/* Hover effect for each reservation box */
+.reservation-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Reservation box content */
+.reservation-box p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+/* Button styling for Edit and Delete */
+button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.delete-btn {
+  background-color: #f44336;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+}
+
+.edit-btn {
+  background-color: #ffa500;
+}
+
+.edit-btn:hover {
+  background-color: #ff7f00;
+}
+
+/* Modal for Delete Confirmation */
+.delete-confirmation-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+.delete-confirmation-modal button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.delete-confirmation-modal button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .reservation-box {
+    width: 100%; /* Allow reservation boxes to take full width on smaller screens */
+  }
+}
+
+.reserve-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Modal Styling */
+.delete-confirmation-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.delete-confirmation-modal button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-confirmation-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.delete-confirmation-modal button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+#confirmationMessage {
+  font-size: 24px;
+  color: #4CAF50; /* Green color for confirmation */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#reservationDetails {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.hotel-details-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.hotel-title {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.hotel-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%; /* Ensure the container takes full width */
+  height: auto; /* Let the height adjust based on content */
+}
+
+.hotel-image {
+  width: 70%; /* Medium width (adjust as needed) */
+  max-width: 600px; /* Maximum width for image */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Make sure the image fills the area */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
+
+.hotel-info {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  text-align: left;
+  max-width: 900px;
+  margin: 20px auto; /* Center the info box */
+}
+
+.hotel-info p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.reserve-btn {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reserve-btn:hover {
+  background-color: #0056b3;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f5; /* Light background color for the whole page */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Home Page Container */
+.home-container {
+  background-color: #e1bee7;  /* Light purple background for home */
+  min-height: 100vh;  /* Ensure the page takes full height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 3em;
+  color: #6a1b9a;  /* Dark purple */
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Subheading Styling */
+h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+/* Box for Navigation Buttons */
+.home-boxes {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Each Button Box */
+.home-box {
+  background-color: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.home-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.home-box h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #6a1b9a;
+}
+
+.home-box p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.home-box button {
+  padding: 12px 24px;
+  font-size: 1.2em;
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-box button:hover {
+  background-color: #4a148c;  /* Darker purple for hover */
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container for the entire Create Reservation page */
+.create-reservation-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+.create-reservation-container h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #6a1b9a; /* Dark Purple */
+  margin-bottom: 20px;
+}
+
+.create-reservation-container p {
+  text-align: center;
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Form Container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #6a1b9a;
+}
+
+input {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1.2em;
+  background-color: #6a1b9a; /* Dark Purple */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #4a148c; /* Lighter purple on hover */
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .create-reservation-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  button {
+    font-size: 1.1em;
+  }
+}
+
+.reservation-list-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  color: #6a1b9a; /* Dark Purple */
+  margin-bottom: 20px;
+}
+
+.reserve-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4a148c;
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reserve-btn:hover {
+  background-color: #6a1b9a;
+}
+
+.reserve-btn:focus {
+  outline: none;
+}
+
+/* Container for all reservation boxes */
+.reservation-boxes-container {
+  display: flex;
+  flex-direction: column; /* Arrange the boxes vertically */
+  gap: 20px;
+  align-items: center; /* Center the boxes horizontally */
+  margin-top: 20px;
+}
+
+/* Styling for individual reservation boxes */
+.reservation-box {
+  background-color: #e1bee7; /* Light Purple Background */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 90%; /* Full width for the container */
+  max-width: 800px; /* Limit max width for the boxes */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reservation-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.reservation-box h3 {
+  font-size: 1.6em;
+  color: #4a148c; /* Dark Purple */
+  margin-bottom: 10px;
+}
+
+.reservation-box p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.delete-btn {
+  padding: 8px 16px;
+  background-color: #d32f2f; /* Red for delete */
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.delete-btn:hover {
+  background-color: #c62828;
+}
+
+.delete-btn:focus {
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .reservation-box {
+    width: 100%; /* Take up full width on mobile */
+    padding: 15px;
+  }
+
+  .reserve-btn {
+    width: 100%; /* Full width for Reserve button on mobile */
+    font-size: 1.1em;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container for the entire home page */
+.home-container {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+/* Welcome Section */
+.welcome-container {
+  margin-bottom: 40px;
+}
+
+.welcome-container h1 {
+  font-size: 2.5em;
+  color: #4a148c;  /* Dark Purple */
+  margin-bottom: 20px;
+}
+
+.welcome-container p {
+  font-size: 1.3em;
+  color: #555;
+}
+
+/* Button Options Section */
+.options-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.option-box {
+  background-color: #6a1b9a; /* Dark Purple */
+  color: white;
+  padding: 30px;
+  width: 250px;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.option-box h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.option-box p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.option-box:hover {
+  background-color: #4a148c; /* Lighter purple */
+  transform: translateY(-10px);
+}
+
+.option-box:focus {
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .option-box {
+    width: 200px;
+    font-size: 1.1em;
+  }
+
+  .welcome-container h1 {
+    font-size: 2em;
+  }
+
+  .welcome-container p {
+    font-size: 1.1em;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+/* Container for the entire app */
+.app-container {
+  height: 100vh;
+  background-image: url('https://example.com/hotel-background.jpg'); /* Replace with your hotel background image URL */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Welcome Section */
+.welcome-container {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.welcome-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.welcome-container p {
+  font-size: 1.3em;
+  margin-top: 10px;
+}
+
+/* Options Section */
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.option-btn {
+  background-color: #4a148c;  /* Dark Purple */
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+  padding: 15px 25px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.option-btn:hover {
+  background-color: #6a1b9a;  /* Lighter Purple */
+  transform: scale(1.05);  /* Slight zoom effect */
+}
+
+.option-btn:focus {
+  outline: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .option-btn {
+    width: 200px;
+    font-size: 1.1em;
+  }
+
+  .welcome-container h1 {
+    font-size: 2em;
+  }
+
+  .welcome-container p {
+    font-size: 1.1em;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* Container for all content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #6a1b9a; /* Dark Purple Color */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Light Purple Box for Cards (Increasing Box Size) */
+ul.hotel-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+li.hotel-card {
+  background: #e1bee7; /* Light Purple Background */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px; /* Increased Width */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px; /* Increased Padding */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+li.hotel-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for Images (Adjust to Box Size) */
+.hotel-image {
+  width: 100%;
+  height: 200px; /* Set fixed height */
+  object-fit: cover; /* Ensure the image covers the space */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.8em; /* Increased Font Size */
+  margin-bottom: 10px;
+}
+
+.hotel-rating {
+  font-size: 1.4em; /* Increased Font Size */
+  color: #f39c12; /* Gold color for rating */
+  margin-bottom: 15px;
+}
+
+button.reserve-btn {
+  padding: 12px 24px; /* Increased Padding */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em; /* Increased Font Size */
+  background-color: #4a148c; /* Dark Purple */
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button.reserve-btn:hover {
+  background-color: #6a1b9a; /* Lighter purple for hover */
+}
+
+button.reserve-btn:focus {
+  outline: none;
+}
